@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%block content%}
+    <form method="post" action="{%url 'player_new_invitation'%}">
+        {{form}}
+        <button type="submit">send a fucking invitation</button>
+    </form>
+{%endblock%}
+</body>
+</html>

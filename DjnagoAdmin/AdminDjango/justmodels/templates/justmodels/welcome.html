@@ -1,0 +1,23 @@
+{%extends "base.html"%}
+{%block title%} you motherfucker stock{%endblock%}
+
+{%block content%}
+<p>
+    motherfuckers no one cares you bunch of fuckers
+</p>
+
+<br>
+    {%for company in companies %}
+<ul>
+    <li>
+    <a href="{%url 'details' company.symbol%}">
+        {{company.companyName}} &nbsp;&nbsp;&nbsp;&nbsp; {{company.symbol}}
+    </a>
+    </li>
+
+</ul>
+    {% endfor %}
+<a href="{%url 'home' %}">
+    fuck it
+</a>
+{%endblock%}

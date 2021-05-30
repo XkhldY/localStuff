@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>hello crazy {{game_name}} world</h1>
+<h1>welcome {{user.username}}</h1>
+
+<ul>
+    {%for g in games%}
+        <li> game {{g.id}}: {{g.first_player}} vs {{g.second_player}}</li>
+    {%endfor%}
+
+    <a href="{% url 'player_new_invitation' %}"> invite another motherfucker</a>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+{%extends "base.html"%}
+{% block title %}you motherfucker stock: {{stock.company}}{% endblock %}
+{%block content%}
+<a>stock please</a><br>
+
+{%for stock in stocks%}
+<a>{{stock.company.companyName}}</a>&nbsp;&nbsp;
+<a>{{stock.close}}</a>&nbsp;&nbsp;<a>{{stock.open}}</a>&nbsp;&nbsp;<a>{{stock.prev_close}}</a>&nbsp;&nbsp;<a>{{stock.volume}}</a>&nbsp;&nbsp;<br>
+{%endfor%}
+{%endblock%}
