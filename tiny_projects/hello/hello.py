@@ -1,14 +1,14 @@
 #! /usr/bin/env python
-# purpose: say fuck you
+# purpose: not mych
 
 import argparse
 
 
 def main():
-    parser = argparse.ArgumentParser(description='say fuck you asshole')
-    parser.add_argument('--name', '-n', metavar='name', help='name to fuck', default='all motherfuckers')
+    parser = argparse.ArgumentParser(description='type a name')
+    parser.add_argument('--name', '-n', metavar='name', help='type name', default='people')
     args = parser.parse_args()
-    print('fuck you ' + args.name)
+    print('help please ' + args.name)
 
 
 if __name__ == '__main__':
